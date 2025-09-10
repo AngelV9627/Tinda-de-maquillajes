@@ -17,7 +17,7 @@ const products = [
   { id: 16, name: "Polvo de hadas", price: 2500, img: "img/polvo.jpg.jpeg" },
   { id: 17, name: "Base Fit ME", price: 3000, img: "img/basefit.jpg.jpeg" },
   { id: 18, name: "Tinta", price: 4000, img: "img/tintaa.jpg.jpeg" },
-  { id: 19, name: "Mascara de pestañas azul", price: 3600, img: "img/mascaraZul.jpg.jpeg" },
+  { id: 19, name: "Mascara de pestañas azul", price: 3600, img: "img/MascaraZul.jpg.jpeg" },
   { id: 20, name: "Corrector de ojeras", price: 3800, img: "img/CorrectorO.jpg.jpeg" },
   { id: 21, name: "Sombra eyeshadow", price: 3800, img: "img/sombra2.jpg.jpeg" },
   { id: 22, name: "Tinta de labios", price: 3200, img: "img/tinta.jpg.jpeg" },
@@ -108,3 +108,4 @@ whatsappBtn.addEventListener("click", () => {
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
   window.open(url, "_blank");
 });
+
