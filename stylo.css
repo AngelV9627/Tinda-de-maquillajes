@@ -18,6 +18,7 @@ header {
   top: 0;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   z-index: 1000;
+  flex-wrap: wrap;
 }
 
 .logo-container {
@@ -27,9 +28,9 @@ header {
 }
 
 .logo {
-  height: 80px;   /* 👉 ajustá este valor (60px / 100px según prefieras) */
+  height: 80px;
   width: auto;
-  border-radius: 50%; /* hace el logo circular si la imagen es cuadrada */
+  border-radius: 50%;
   transition: transform 0.3s ease;
 }
 
@@ -238,7 +239,8 @@ button.add-to-cart:hover {
   background: #999;
   transform: scale(1.05);
 }
-/* 📱 Ajustes Responsive */
+
+/* 📱 Responsive */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -247,7 +249,7 @@ button.add-to-cart:hover {
   }
 
   .logo {
-    height: 80px; /* más chico en celular */
+    height: 70px;
   }
 
   .title h1 {
@@ -264,24 +266,24 @@ button.add-to-cart:hover {
   }
 
   .product-grid {
-    grid-template-columns: 1fr 1fr; /* 2 columnas en tablets */
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (max-width: 480px) {
   .product-grid {
-    grid-template-columns: 1fr; /* 1 columna en celular chico */
+    grid-template-columns: 1fr;
   }
 
   .logo {
-    height: 60px; /* todavía más chico */
+    height: 60px;
   }
 
   #cart-btn {
-    width: 100%; /* ocupa todo el ancho en móvil */
+    width: 100%;
   }
 
   .cart {
-    width: 100%; /* carrito ocupa toda la pantalla en mobile */
+    width: 100%;
   }
 }
