@@ -154,7 +154,8 @@ button.add-to-cart:hover {
   position: fixed;
   top: 0;
   right: -100%;
-  width: 320px;
+  width: 100%;          /* ocupa todo el ancho en móviles */
+  max-width: 400px;     /* ancho máximo en desktop */
   height: 100%;
   background: white;
   box-shadow: -2px 0 8px rgba(0,0,0,0.3);
@@ -285,5 +286,18 @@ button.add-to-cart:hover {
 
   .cart {
     width: 100%;
+    border-radius: 0;
+    padding: 0.5rem;
+  }
+
+  #cart-items li {
+    font-size: 0.9rem;
+  }
+
+  #whatsapp-btn,
+  #close-cart {
+    font-size: 0.9rem;
+    padding: 0.6rem;
   }
 }
+
