@@ -4,7 +4,7 @@ const products = [
   { id: 3, name: "Delineador", price: 2000, img: "img/delineador.jpg.jpeg" },
   { id: 4, name: "Máscara de Pestañas", price: 3600, img: "img/pestañas.jpg.jpeg" },
   { id: 5, name: "Corrector en barra Tei", price: 6000, img: "img/pinturas.jpg.jpeg" },
-  { id: 6, name: "Brochas", price: 6000, img: "img/pincel.jpg.jpeg" },
+  { id: 6, name: "Brochas", price: 2000, img: "img/pincel.jpg.jpeg" },
   { id: 7, name: "Mascara para puntos negros", price: 1000, img: "img/mascarapuntos.jpg.jpeg" },
   { id: 8, name: "Gloss labial hidratante", price: 2500, img: "img/GlosHidra.jpg.jpeg" },
   { id: 9, name: "Cepillo para cejas y pestañas", price: 300, img: "img/Cepillocejas.jpg.jpeg" },
@@ -108,6 +108,7 @@ whatsappBtn.addEventListener("click", () => {
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
   window.open(url, "_blank");
 });
+
 
 
 
